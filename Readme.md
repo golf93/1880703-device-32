@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Gayane Zurnachyan](https://up.htmlacademy.ru/htmlcss/32/user/1880703).
-* Наставник: `Иван Жарков`.
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/id191422).
 
 ---
 
