@@ -22,9 +22,8 @@
   src: url("../fonts/rubik-800.woff2") format("woff2");
 }
 
-/* Raleway */
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   src: url("../fonts/raleway-800.woff2") format("woff2");
@@ -36,9 +35,173 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #000;
-  background-color: #e5e5e5;
+  background-color: #fff;
+}
+
+.page-header {
+  background-color: #ffe17f;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-user-item,
+.search {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.search {
+  opacity: 30%;
+}
+
+.nav-item {
+  font-family: "Railway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.info-slogan,
+.inner-header-title {
+  font-family: "Railway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.info-text {
+  font-family: "Railway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.more {
+  font-family: "Railway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  text-transform: uppercase;
+  background-color: #ffe17f;
+  text-align: center;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444;
+}
+
+.parameter-2 {
+  font-family: "Railway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.products-item {
+  font-family: "Railway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.tabs-nav-item {
+  font-family: "Railway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  text-transform: uppercase;
 }
 
 .tabs-background {
   background: no-repeat url("../img/delivery.svg");
+}
+
+.subtitle {
+  font-family: "Railway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.delivery-promo-title {
+  font-family: "Railway", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.transports-list-item {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.newsletter {
+  background-color: #f0f0f0;
+}
+
+.newsletter-button {
+  font-family: "Railway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-footer {
+  background-color: #444444;
+}
+
+.footer-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+}
+
+.footer-nav-link {
+  font-family: "Railway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 60%;
+}
+
+.catalog-filter-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.catalog-filter {
+  background-color: #ebebeb;
+}
+
+.catalog-filter-heading {
+  background-color: #dcdcdc;
+}
+
+.catalog-sorting,
+.pagination {
+  background-color: #ebebeb;
 }
