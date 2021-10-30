@@ -3,7 +3,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/rubik-400.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -11,7 +11,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/rubik-700.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -19,14 +19,14 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/rubik-800.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/raleway-800.woff2") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -45,6 +45,10 @@ body {
 a {
   text-decoration: none;
   color: #000;
+}
+
+address {
+  all: initial;
 }
 
 .nav-user-item,
@@ -77,7 +81,7 @@ a {
 .info-text {
   font-family: "Railway", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 30px;
 }
 
@@ -92,20 +96,19 @@ a {
 }
 
 .text {
-  font-size: 18px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.parameter {
+  font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   color: #444;
 }
 
-.parameter-2 {
-  font-family: "Railway", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-}
-
-.products-item {
+.products-item-title {
   font-family: "Railway", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -198,10 +201,37 @@ a {
 }
 
 .catalog-filter-heading {
+  font-family: "Railway", sans-serif;
   background-color: #dcdcdc;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18px;
 }
 
 .catalog-sorting,
 .pagination {
   background-color: #ebebeb;
+}
+
+.product-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.pagination-back,
+.pagination-forward {
+  font-family: "Railway", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18px;
+}
+
+.pagination-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444;
 }
