@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Rubik */
 @font-face {
   font-family: "Rubik";
@@ -49,6 +53,7 @@ body {
 
 .main-container {
   flex-grow: 1;
+  margin-top: -88px;
 }
 
 li {
@@ -56,63 +61,36 @@ li {
 }
 
 .visually-hidden {
-  visibility: hidden;
-}
-
-.nav {
-  margin: 0 auto;
-}
-
-.nav-list {
-  display: flex;
-  width: 1075px;
-}
-
-.col-1 {
-  width: 560px;
-}
-
-.nav-user-col-2 {
-  display: flex;
-}
-
-.nav-user-col-2 li:nth-child(1) {
-  width: 245px;
-}
-
-.nav-user-col-2 li:nth-child(2) {
-  width: 100px;
-}
-
-.col-2 {
-  display: flex;
-}
-
-.col-2 li:nth-child(1) {
-  padding-right: 19px;
-}
-
-.col-2 li:nth-child(2) {
-  padding-right: 62px;
-}
-
-.page-container {
-  width: 1160px;
-  margin: 0 auto;
-}
-
-.info-container {
-  display: flex;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-header {
   background-color: #ffe17f;
-  width: 1075px;
+  width: 1160px;
+  height: 300px;
+  padding-left: 60px;
+  padding-right: 60px;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
-.flex-container {
+.nav-logo {
+  display: block;
+  margin-top: -23px;
+}
+
+.nav-list {
   display: flex;
+  width: 100%;
+  padding-left: 0;
+  margin-top: 30px;
 }
 
 a {
@@ -124,16 +102,25 @@ address {
   all: initial;
 }
 
+.nav-search {
+  width: 50%;
+  opacity: 30%;
+}
+
 .nav-user-item,
-.search {
+.nav-search {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
-.search {
-  opacity: 30%;
+.nav-list li:nth-child(2) {
+  margin-right: auto;
+}
+
+.nav-list li:nth-child(3) {
+  margin-right: 34px;
 }
 
 .nav-item {
@@ -143,12 +130,40 @@ address {
   text-transform: uppercase;
 }
 
-.info-slogan,
-.inner-header-title {
+.nav-catalog {
+  width: 50%;
+}
+
+.nav-delivery {
+  margin-right: 30px;
+}
+
+.nav-contacts {
+  margin-left: auto;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.info-slogan {
   font-family: "Railway", sans-serif;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
+}
+
+.info-content {
+  padding-left: 0;
+}
+
+.info-content-item {
+  display: flex;
+}
+
+.info-content-text {
+  margin-left: 40px;
 }
 
 .info-text {
@@ -156,6 +171,7 @@ address {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  margin-bottom: 30px;
 }
 
 .more {
@@ -168,28 +184,94 @@ address {
   text-align: center;
 }
 
+.info-advantages {
+  padding-left: 0;
+  display: flex;
+  margin-top: 70px;
+}
+
+.info-advantages-item {
+  width: 160px;
+}
+
 .text {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  color: rgba(68, 68, 68, 1);
 }
 
-.parameter {
+.primary-parameter {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.secondary-parameter {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   color: rgba(68, 68, 68, 1);
 }
 
-.products-item-title {
+.products {
+  width: 100%;
+  margin-bottom: 140px;
+}
+
+.products-list {
+  display: flex;
+  padding-left: 0;
+  margin-top: 110px;
+}
+
+.products-list li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.products-item {
+  width: 160px;
+}
+
+.products-item-link {
   font-family: "Railway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
 }
 
+.products-item-img {
+  background-color: rgba(255, 225, 127, 1);
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 33px;
+}
+
+.tabs {
+  display: flex;
+  background-color: rgba(240, 240, 240, 1);
+  margin-bottom: 90px;
+}
+
 .tabs-nav {
-  width: 417px;
+  padding-left: 0;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-content {
+  padding-left: 0;
+  display: flex;
+}
+
+.tabs-content li:first-child {
+  max-width: 500px;
+  margin: -90px 65px 0 116px;
 }
 
 .tabs-nav-item {
@@ -200,10 +282,6 @@ address {
   text-transform: uppercase;
 }
 
-.tabs-background {
-  background: no-repeat url("../img/delivery.svg");
-}
-
 .subtitle {
   font-family: "Railway", sans-serif;
   font-size: 50px;
@@ -211,13 +289,40 @@ address {
   line-height: 50px;
 }
 
-.delivery-promo-title {
+.delivery-promo {
+  width: 100%;
+  background-color: rgba(240, 240, 240, 1);
+  margin-bottom: 100px;
+}
+
+.delivery-promo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Railway", sans-serif;
   font-size: 20px;
   font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
-  text-align: center;
+}
+
+.delivery-promo-img {
+  display: inline-block;
+  background-color: rgba(255, 225, 127, 1);
+  width: 125px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.transports-list li::before {
+  content: "• ";
+  color: rgba(255, 199, 0, 1);
 }
 
 .transports-list-item {
@@ -226,8 +331,30 @@ address {
   line-height: 20px;
 }
 
+.transports-list,
+.contacts-schedule {
+  padding-left: 0;
+}
+
 .newsletter {
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.newsletter-container {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-text {
+  max-width: 50%;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-text {
+  margin-left: auto;
 }
 
 .newsletter-button {
@@ -241,8 +368,26 @@ address {
 
 .page-footer {
   background-color: rgba(68, 68, 68, 1);
-  width: 100%;
-  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.footer-contacts {
+  margin-left: auto;
+}
+
+.footer-nav-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.footer-nav-list li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-text {
