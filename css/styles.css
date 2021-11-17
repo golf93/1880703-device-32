@@ -85,16 +85,25 @@ li {
   margin-top: -23px;
 }
 
-.nav-list {
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-list,
+.nav-list-catalog {
   display: flex;
   width: 100%;
   padding-left: 0;
   margin-top: 30px;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
+.nav-list-catalog li:not(:last-child) {
+  margin-right: 46px;
+}
+
+.nav-list-catalog li:nth-child(4) {
+  margin-right: auto;
 }
 
 .nav-search {
@@ -471,11 +480,42 @@ a {
   color: #fff;
 }
 
+.main-catalog {
+  margin-top: 37px;
+}
+
+.inner-header {
+  padding: 0 60px;
+  margin-bottom: 50px;
+}
+
+.inner-header-title {
+  margin-top: 0 0 14px;
+}
+
+.breadcrumbs {
+  padding-left: 0;
+  display: flex;
+}
+
+.breadcrumbs li:not(:last-child) {
+  margin-right: 36px;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   opacity: 60%;
+}
+
+.catalog-content {
+  width: 100%;
+}
+
+.catalog-content .container {
+  display: flex;
+  padding: 0 60px;
 }
 
 .catalog-filter-title {
@@ -485,21 +525,35 @@ a {
 }
 
 .catalog-filter {
-  background-color: #ebebeb;
+  width: 328px;
 }
 
 .catalog-filter-heading {
+  margin: 0;
   font-family: "Railway", sans-serif;
-  background-color: #dcdcdc;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 800;
   line-height: 18px;
 }
 
-.catalog-sorting,
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.product-list li {
+  margin-right: 40px;
+}
+
 .pagination {
   background-color: #ebebeb;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 77px;
 }
 
 .sorting {
