@@ -90,6 +90,15 @@ a {
   color: #000;
 }
 
+.plus {
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url("/img/plus.svg") no-repeat 50% 50%;
+}
+
 .nav-list,
 .nav-list-catalog {
   display: flex;
@@ -183,7 +192,7 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .more {
@@ -211,6 +220,18 @@ a {
   font-weight: 400;
   line-height: 30px;
   color: rgba(68, 68, 68, 1);
+}
+
+.text-first {
+  margin-bottom: 42px;
+}
+
+.text-second {
+  margin-bottom: 76px;
+}
+
+.contacts-phone {
+  text-decoration: underline;
 }
 
 .primary-parameter {
@@ -326,6 +347,7 @@ a {
   font-weight: 800;
   line-height: 50px;
   margin-bottom: 40px;
+  width: 50%;
 }
 
 .delivery-promo {
@@ -362,9 +384,30 @@ a {
   margin-bottom: 88px;
 }
 
+.about,
+.contacts {
+  width: 100%;
+}
+
+.about {
+  padding-right: 80px;
+}
+
+.contacts {
+  padding-right: 60px;
+}
+
 .transports-list li::before {
-  content: "• ";
+  content: "•    ";
   color: rgba(255, 199, 0, 1);
+}
+
+.transports-list {
+  margin-bottom: 90px;
+}
+
+.transports-list li {
+  margin-bottom: 16px;
 }
 
 .transports-list-item {
@@ -376,6 +419,10 @@ a {
 .transports-list,
 .contacts-schedule {
   padding-left: 0;
+}
+
+.contacts-schedule {
+  margin-bottom: 67px;
 }
 
 .newsletter {
@@ -399,10 +446,8 @@ a {
 
 .newsletter-form {
   display: flex;
-}
-
-.newsletter-text {
-  margin-left: auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .newsletter-button {
@@ -436,6 +481,7 @@ a {
 .footer-social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-nav-list {
@@ -460,6 +506,13 @@ a {
   width: 80px;
   height: 7px;
   background-color: rgba(255, 199, 0, 1);
+}
+
+.black-line {
+  display: inline-block;
+  width: 80px;
+  height: 7px;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .footer-text {
@@ -515,7 +568,10 @@ a {
 
 .catalog-content .container {
   display: flex;
-  padding: 0 60px;
+}
+
+.catalog-filter-form {
+  width: 100%;
 }
 
 .catalog-filter-title {
@@ -526,6 +582,7 @@ a {
 
 .catalog-filter {
   width: 328px;
+  padding-left: 60px;
 }
 
 .catalog-filter-heading {
@@ -540,11 +597,19 @@ a {
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
+  padding: 0;
   justify-content: center;
 }
 
-.product-list li {
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.product-list li:nth-child(1),
+.product-list li:nth-child(3) {
   margin-right: 40px;
 }
 
