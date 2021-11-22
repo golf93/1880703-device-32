@@ -204,7 +204,7 @@ a {
 
 .info-slogan {
   font-family: "Railway", sans-serif;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 800;
   line-height: 50px;
   position: relative;
@@ -227,9 +227,23 @@ a {
   border: none;
   background: none;
   position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translateX(-50%, -50%);
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.slider-prev {
+  left: 15px;
+}
+
+.slider-next {
+  left: 44%;
+}
+
+.slider-pagination {
+  position: absolute;
+  bottom: 180px;
+  right: 49px;
+  display: flex;
 }
 
 .slider-pagination-button {
@@ -241,9 +255,6 @@ a {
   background-color: #fff;
   margin-left: 11px;
   margin-right: 11px;
-  position: absolute;
-  bottom: 180px;
-  right: 49px;
 }
 
 .slider-pagination-button-current {
@@ -435,6 +446,7 @@ a {
 .tabs-nav-item-current {
   background-color: rgba(0, 0, 0, 1);
   color: rgba(255, 225, 127, 1);
+  width: 100%;
 }
 
 .subtitle {
